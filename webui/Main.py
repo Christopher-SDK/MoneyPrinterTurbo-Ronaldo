@@ -7,7 +7,7 @@ import requests
 import streamlit as st
 from loguru import logger
 
-from auth import check_password
+from webui.auth import check_password
 
 if not check_password():
     st.stop()
