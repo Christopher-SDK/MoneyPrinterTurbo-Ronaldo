@@ -1,0 +1,45 @@
+[app]
+video_source = "pexels"
+hide_config = false
+edge_tts_timeout = 30
+tls_verify = true
+pexels_api_keys = []
+pixabay_api_keys = []
+coverr_api_keys = []
+llm_provider = "gemini"
+gemini_api_key = ""
+gemini_model_name = "gemini-2.5-flash"
+subtitle_provider = "edge"
+endpoint = ""
+material_directory = ""
+enable_redis = false
+redis_host = "localhost"
+redis_port = 6379
+redis_db = 0
+redis_password = ""
+max_concurrent_tasks = 5
+max_queued_tasks = 100
+match_materials_to_script = false
+video_codec = "libx264"
+
+[whisper]
+model_size = "large-v3"
+device = "CPU"
+compute_type = "int8"
+
+[ui]
+hide_log = false
+language = "es"
+tts_server = "azure-tts-v1"
+voice_name = "es-AR-ElenaNeural-Female"
+font_name = "MicrosoftYaHeiBold.ttc"
+subtitle_position = "bottom"
+text_fore_color = "#FFFFFF"
+font_size = 60
+subtitle_background_enabled = true
+subtitle_background_color = "#000000"
+rounded_subtitle_background = false
+
+[azure]
+
+[siliconflow]
