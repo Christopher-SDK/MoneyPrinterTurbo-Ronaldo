@@ -7,7 +7,10 @@ import requests
 import streamlit as st
 from loguru import logger
 
-from webui.auth import check_password
+import sys
+import os
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from auth import check_password
 
 if not check_password():
     st.stop()
