@@ -7,6 +7,11 @@ import requests
 import streamlit as st
 from loguru import logger
 
+from auth import check_password
+
+if not check_password():
+    st.stop()
+
 # Add the root directory of the project to the system path to allow importing modules from the project
 root_dir = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
 if root_dir not in sys.path:
